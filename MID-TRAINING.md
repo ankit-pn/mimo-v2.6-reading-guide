@@ -54,7 +54,7 @@ The pretrained model used AdamW, but mid-training switches hidden weight matrice
 
 ### 4. Mid-training prepares; it does not replace RL
 
-The mid-trained checkpoint is followed by a short SFT stage, then large-scale RL. RL adds the repeated environment interaction and reward-based policy updates. So the roles are distinct:
+The mid-trained checkpoint is followed by a short SFT stage, then large-scale RL. RL adds the repeated environment interaction and reward-based policy updates. See the [post-training diagram](POST-TRAINING.md) for the full flagship and open-model paths. So the roles are distinct:
 
 | Stage | Main job |
 |---|---|

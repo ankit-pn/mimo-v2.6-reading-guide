@@ -9,6 +9,7 @@ This guide is for technically curious readers who want more than a section-by-se
 **Want the big picture first?** Start with the [visual map of the training loop](PAPER-MAP.md).
 For the foundation-model phase, see the [pre-training flow diagram](PRE-TRAINING.md).
 For the preparation phase specifically, see the [mid-training flow diagram](MID-TRAINING.md).
+For SFT, RL, MOPD2, and the open 9B track, see the [post-training flow diagram](POST-TRAINING.md).
 
 ## The route
 

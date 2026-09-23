@@ -6,6 +6,8 @@
 
 This guide is for technically curious readers who want more than a section-by-section summary. A basic familiarity with language models helps, but no prior RL background is assumed. It builds the necessary ideas in order, translates the paper’s systems vocabulary into a mental model, walks through its reward machinery, and then returns to the experiments with a critical eye. The goal is to make the paper easier to reason about—not to replace reading it.
 
+**Want the big picture first?** Start with the [visual map of the training loop](PAPER-MAP.md).
+
 ## The route
 
 ### Part I — Build the frame

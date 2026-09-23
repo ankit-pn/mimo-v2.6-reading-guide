@@ -5,7 +5,7 @@ Post-training has **two related but distinct tracks** in the report: the flagshi
 ## 1. Flagship MiMo-V2.6 path
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["Pre-trained + mid-trained<br/>MiMo-V2.6"] --> B["Short SFT"]
     B --> C["Mixed-task agentic RL<br/>GRPO across code, general, visual, cyber"]
     C --> D["MOPD2<br/>Integrate capabilities from specialized teachers"]
@@ -55,7 +55,7 @@ The flagship batch uses **1,568 prompts × 16 rollouts**, or about 25K trajector
 ## 3. Open 9B research path
 
 ```mermaid
-flowchart LR
+flowchart TD
     A["MiMo-generated training data<br/>77.4B tokens; 27.2B loss tokens"] --> B["SFT Qwen3.5-9B"]
     B --> C["MiMo-V2.6-Distill-Qwen-9B"]
     C --> D["Separate domain-specific GRPO runs<br/>Code · Cyber · General · Visual"]

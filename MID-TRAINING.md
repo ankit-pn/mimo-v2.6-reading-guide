@@ -4,6 +4,8 @@
 
 Mid-training is the bridge between a broadly capable pretrained model and the later agent-RL run. It adds agent-oriented experience, grows the context window for long interactions, and adapts the optimization setup for large-batch training. [§3.2, p. 7]
 
+It starts from the two-stage [pre-training recipe](PRE-TRAINING.md): text-only language training followed by joint omni-modal training.
+
 ```mermaid
 flowchart TD
     P["Pre-trained multimodal model<br/>Context extended to 256K"]

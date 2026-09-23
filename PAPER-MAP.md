@@ -42,7 +42,7 @@ flowchart TD
 
 ## Read the arrows
 
-1. **Prepare the learner.** Pre-training gives the model broad capabilities; mid-training adds agent-oriented experience and extends context; SFT supplies the starting policy. RL builds on this foundation rather than starting from an untrained model. See the [expanded mid-training diagram](MID-TRAINING.md). [§3, p. 7; §4, p. 8]
+1. **Prepare the learner.** Pre-training gives the model broad capabilities; mid-training adds agent-oriented experience and extends context; SFT supplies the starting policy. RL builds on this foundation rather than starting from an untrained model. See the [pre-training](PRE-TRAINING.md) and [expanded mid-training](MID-TRAINING.md) diagrams. [§3, p. 7; §4, p. 8]
 2. **Give it a task and room to act.** The Sample Mixer selects from different task sources. The main run uses 1,568 prompts with 16 attempts each—about 25K trajectories and 2.7–3.7B tokens per step. Each Agent Loop interacts with an environment through a harness and creates a multi-turn trajectory. [§4.1, pp. 8–9; §5.1, p. 20; §6.1, pp. 26–27]
 3. **Turn outcomes into a useful lesson.** A verifier checks task success. GRS adds reusable task rubrics; GAR compares a group of attempts and shifts positive learning credit toward better successful solutions. Reward-hack correction and behavioral penalties try to keep the signal aligned with the intended task. [§4.2–4.3, pp. 9–20]
 4. **Update, then repeat.** GRPO uses the group-derived advantages to update the policy. Asynchronous execution, distributed trajectory storage, and training–inference consistency mechanisms make that cycle practical at the reported scale. [§5.1, pp. 20–21; §6, pp. 26–33]
